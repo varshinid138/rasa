@@ -1,0 +1,70 @@
+version: "3.1" 
+stories:
+  - story: classify negative sentence
+    steps:
+      - intent: negative_sentiment
+      - action: utter_negative_sentiment
+      - action: action_log_conversation
+    
+ 
+
+  - story: classify out of context sentence
+    steps:
+      - intent: out_of_context
+      - action: utter_out_of_context
+      - action: action_log_conversation
+    
+
+
+  - story: classify neutral sentence
+    steps:
+      - intent: neutral_sentiment
+      - action: utter_neutral_sentiment
+      - action: action_log_conversation
+     
+
+  - story: classify relevant sentence
+    steps:
+      - intent: relevant_sentence
+      - action: utter_relevant_sentence
+      - action: action_log_conversation
+      
+
+
+  - story: classify irrelevant sentence
+    steps:
+      - intent: irrelevant_sentence
+      - action: utter_irrelevant_sentence
+      - action: action_log_conversation
+      
+  - story: classify general questions
+    steps:
+      - intent: general_questions
+      - action: utter_general_questions
+      - action: action_log_conversation
+
+  - story: classify doubt clearing
+    steps:
+      - intent: doubt_clearing
+      - action: utter_doubt_clearing
+      - action: action_log_conversation
+
+  - story: classify taking breaks
+    steps:
+      - intent: taking_breaks
+      - action: utter_taking_breaks
+      - action: action_log_conversation
+
+  - story: classify basic terms
+    steps:
+      - intent: basic_terms
+      - action: utter_basic_terms
+      - action: action_log_conversation
+
+  - story: classify necessary installment
+    steps:
+      - intent: necessary_installment
+      - action: utter_necessary_installment
+      - action: action_log_conversation
+
+  

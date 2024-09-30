@@ -1,0 +1,13 @@
+User: wands are here
+Bot: This message seems irrelevant. Let's stay on topic!
+
+User: ISIS
+Bot: Please refrain from using inappropriate or flagged terms in conversation.
+
+User: we have a blue team
+Bot: This sentence is irrelevant.
+
+
+
+
+

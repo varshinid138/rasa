@@ -1,0 +1,1561 @@
+version: "3.1"
+
+nlu:
+  - intent: negative_sentiment
+    examples: |
+      - You are stupid and don't know anything.
+      - I hate when people do this kind of thing.
+      - This is the worst idea ever.
+      - You are such an idiot for saying that.
+      - I can't stand how dumb this is.
+      - I hate dealing with people like you.
+      - This entire situation is completely stupid.
+      - That was a foolish mistake, you're a failure.
+      - I despise how you handle things.
+      - You are so annoying, I hate this.
+      - well-noughters
+      - don't, suicide, well-noughters,bombers:, increased, threat, ISIS,, Aqsa
+      -murder
+      -kill
+      
+
+  - intent: out_of_context
+    examples: |
+      - What is linear regression?
+      - Can you explain how to solve this quadratic equation?
+      - What are the latest trends in machine learning?
+      - How do you perform k-means clustering?
+      - What is the significance of Newton's third law?
+      - Explain the concept of gravity in physics.
+      - What is the capital of France?
+      - How do I calculate the area of a triangle?
+      - What is the process of photosynthesis in plants?
+      - Can you explain the structure of a DNA molecule?
+      - The weather today is really nice.
+      - How is your family doing?
+      - I enjoy reading fiction books.
+      - Have you seen the latest movie?
+      - I need to buy groceries later.
+      - What is your favorite hobby?
+      - Can you recommend a good restaurant?
+      - The traffic was terrible this morning.
+      - I love spending time with my pets.
+      - I think we should plan a vacation soon.
+      - I need to log in to my account.
+      - Can you log me into the system?
+      - How do I access my account?
+      - Please help me sign in to my account.
+      - He is completely unskilled.
+      - I forgot my password, can I still log in?
+      - What’s the login process for the portal?
+      - Can you guide me on how to log in?
+      - Let me sign in with my credentials.
+      - How do I log in with my email?
+      - Is there a way to log in with my social media account?
+      - I want to log out of my account.
+      - How do I sign out from this device?
+      - Please log me out.
+      - Can you help me log out?
+      - I’m done, please log me out of the system.
+      - Is there an option to log out securely?
+      - I’d like to sign out from my account.
+      - What’s the process to log out?
+      - Can you log me out of all devices?
+      - Where is the logout button?
+      - What is your full name?
+      - Can you tell me your email address?
+      - What’s your phone number?
+      - Can I know your date of birth?
+      - Where do you currently live?
+      - What’s your home address?
+      - Can you share your work experience with me?
+      - Where did you go to school?
+      - Do you have any siblings?
+      - What is your favorite color?
+      - Can you tell me your middle name?
+      - What is your nickname or preferred name?
+      - Could you provide your ID number?
+      - What is your marital status?
+      - Do you have a driver's license number?
+      - Can you share your occupation?
+      - Where were you born?
+      - What is your nationality?
+      - What languages do you speak?
+      - How many kids do you have?
+      - What’s your alternate phone number?
+      - Can I get your work email?
+      - Can you provide your LinkedIn profile link?
+      - What’s your postal address?
+      - What’s your emergency contact number?
+      - Could you share your personal website URL?
+      - Can I have your fax number?
+      - Can you give me your bank account details?
+      - What’s your credit card number?
+      - Can I know your monthly income?
+      - What’s your social security number?
+      - Could you share your tax ID?
+      - What’s your credit score?
+      - What’s the name of your bank?
+      - Where do you work currently?
+      - What is your job title?
+      - How long have you been at your current job?
+      - Can you provide details of your previous employment?
+      - What is your manager's name?
+      - What department do you work in?
+      - Do you work remotely or on-site?
+      - What’s your favorite type of cuisine?
+      - Do you prefer working from home or in the office?
+      - What’s your favorite genre of music?
+      - Are you an introvert or an extrovert?
+      - Do you enjoy traveling?
+      - What are your favorite types of movies?
+      - What’s your preferred mode of transportation?
+      - What kind of car do you drive?
+      - Do you have any allergies?
+      - What is your blood type?
+      - Can you share your medical history?
+      - Do you have any ongoing medical conditions?
+      - What’s your health insurance provider?
+      - Do you have a family history of any diseases?
+      - Are you on any medication?
+      - How many siblings do you have?
+      - What are the names of your parents?
+      - Are you married or single?
+      - Do you have any children? If so, how many?
+      - What are your children’s names?
+      - What’s your spouse’s name?
+      - How long have you been married?
+      - What’s your favorite book of all time?
+      - What do you like to do in your free time?
+      - What’s your favorite vacation destination?
+      - Do you prefer mountains or beaches?
+      - What’s your favorite season of the year?
+      - Do you prefer dogs or cats?
+      - What’s your favorite hobby?
+      - Are you a morning person or a night owl?
+      - What is your Instagram handle?
+      - Can you share your Twitter username?
+      - What’s your YouTube channel link?
+      - Do you have a Facebook profile?
+      - Are you active on TikTok?
+      - What’s your Reddit username?
+      - What’s your GitHub profile?
+
+  - intent: neutral_sentiment
+    examples: |
+      - Hello, how are you?
+      - Good morning!
+      - Thank you for your time.
+      - Alright, I'll see you later.
+      - Have a nice day!
+      - Okay, let's move on.
+      - Goodbye, talk to you soon.
+      - Hi, it's nice to meet you.
+      - So, what do we do next?
+      - Thank you, that will be all.
+      - Hi, it's nice to meet you.
+      - So, what do we do next?
+      - Thank you, that will be all.
+      - It's a pleasure to be here.
+      - What can I help you with?
+      - Let's get started, shall we?
+      - How can I assist you today?
+      - Feel free to reach out if you need anything.
+      - I'm happy to help.
+      - Let’s take it from here.
+      - I appreciate your time today.
+      - It's good to see you.
+      - Thanks for the update, much appreciated.
+      - I look forward to our next meeting.
+      - Please let me know if you have any questions.
+      - I'm here if you need anything.
+      - I'll touch base with you later.
+      - Let's circle back to this soon.
+      - Thank you for your patience.
+      - It’s great to be working with you.
+      - Let me know when you're ready.
+      - I’ll follow up with you on this.
+      - That works for me.
+      - I’m happy to move forward with this.
+      - Let’s pick this up another time.
+      - Please feel free to ask any questions.
+      - Thanks again for the clarification.
+      - What are the next steps from here?
+      - It's been a pleasure discussing this with you.
+      - I'll keep you in the loop.
+      - Let’s continue this conversation later.
+      - I appreciate your input on this.
+      - Can we revisit this tomorrow?
+      - Thank you for taking the time to speak with me.
+      - What would you like to cover next?
+      - It sounds like we're on the same page.
+      - We can wrap up for now.
+      - I’ll get back to you shortly.
+      - Please let me know if anything changes.
+      - I look forward to working with you more closely.
+      - Can we discuss this in more detail later?
+      - I’m happy to take it from here.
+      - It's been a productive meeting.
+      - Thank you for your understanding.
+      - Let's move forward with this.
+      - I’ll let you know once I have more information.
+      - I hope we can meet again soon.
+      - Let’s keep this on our radar.
+      - I'll be in touch soon.
+      - Can we follow up on this later?
+      - I value your feedback.
+      - Let me know if that works for you.
+      - We can go over the details later.
+      - I appreciate you bringing this to my attention.
+      - I'll let you know what I find.
+      - Looking forward to seeing where this goes.
+      - Please don’t hesitate to ask any questions.
+      - I’ll reach out when I have an update.
+      - Thanks for pointing that out.
+      - I’ll keep this in mind moving forward.
+      - Let’s touch base again tomorrow.
+      - What do you think about this approach?
+      - I’ll make sure to follow up.
+      - Thanks for letting me know.
+      - I’m glad we were able to connect today.
+      - Let’s take this step by step.
+      - I’ll keep you updated as we progress.
+      - Let’s move on to the next item.
+      - I'll reach out if I need more information.
+      - Please keep me posted.
+      - Let’s make sure we’re on the same page.
+      - I’m happy to discuss further when you’re ready.
+      - Feel free to circle back when needed.
+      - I’ll let you know once everything is confirmed.
+      - I appreciate your insights on this.
+      - Let’s review this at a later time.
+      - Please let me know if you have any feedback.
+      - What do you think would be the best approach?
+      - Thanks for bringing this up.
+      - Let me know if I can help in any way.
+      - I’m looking forward to hearing your thoughts.
+      - Let’s make sure we address all the points.
+      - I'll follow up with more details soon.
+      - We can finalize this later.
+      - Thank you for your cooperation.
+      - Let’s plan to reconnect soon.
+      - Please feel free to reach out if anything changes.
+      - I’ll be happy to continue this conversation later.
+      - I’ll keep you informed as we move forward.
+      - Let’s make sure everything is clear before proceeding.
+      - I’m glad we had this discussion.
+      - I'll get back to you once I have the information.
+      - I’ll look into this and get back to you.
+      - Can we go over the next steps together?
+      - I appreciate you taking the time to meet with me.
+      - Let’s ensure we’re aligned before moving forward.
+      - I’ll touch base with you soon to check in.
+      - Thanks for the follow-up.
+      - I’ll be available if you need anything else.
+      - Let’s take a moment to review.
+      - I’ll keep you posted on any developments.
+      - Please feel free to ask for clarification.
+      - I’m happy to assist in any way I can.
+      - Thanks for the productive conversation.
+      - Let’s continue from where we left off.
+      - I’ll reach out if I have any more questions.
+      - We can move ahead once everything is set.
+      - I look forward to continuing this collaboration.
+      - Let me know what works best for you.
+      - Let’s move this forward at your convenience.
+      - I’m available to discuss this further if needed.
+      - Please don’t hesitate to follow up.
+      - Let’s touch base again when you’re ready.
+      - I’ll check in with you later.
+      - I’ll follow up with you on this point.
+      - Let me know if you’d like to discuss more.
+      - I’ll keep you updated on the progress.
+      - Thanks for sharing your thoughts.
+      - I’ll reach out to you once we’re ready.
+      - Let’s confirm the details when possible.
+      - Please let me know what you think.
+      - I appreciate your cooperation on this.
+      - Let me know if this works for you.
+      - I'll ensure that everything is clear before proceeding.
+      - Let’s make sure we cover all the bases.
+      - I’ll keep you in the loop on this.
+      - I appreciate your feedback on this topic.
+      - Let’s reconvene at a later time.
+      - I’ll follow up once we’ve made progress.
+      - Thank you for clarifying.
+      - Please let me know if you need further details.
+      - I’m happy to help with anything else.
+      - Let’s take a look at the next steps.
+      - Thanks for your patience on this matter.
+      - I’ll keep you posted on the next steps.
+      - Let’s continue this discussion when convenient.
+      - I’m available if you’d like to talk further.
+      - I appreciate you keeping me updated.
+      - Let’s make sure to keep the communication open.
+      - I’ll reach out with more information soon.
+      - Thanks for your thoughts on this issue.
+      - Let’s finalize this when you’re ready.
+      - I’ll keep you updated as things move along.
+      - Please reach out if you need anything else.
+      - Thanks for the time today, I appreciate it.
+      - Let’s plan to touch base in the near future.
+      - I’ll make sure to follow up with the team.
+      - Thank you for being flexible.
+      - I’ll ensure everything is aligned before proceeding.
+      - Please feel free to reach out with any other questions.
+      - Go to Go to Go to Go to Go to Go to Go to Go to ensembles .
+      - Okay , you have connected online .
+      
+
+
+  - intent: relevant_sentence
+    examples: |
+      - Hello everyone, so let's start module 1 introduction to ethical hacking here
+      - So before jumping into hacking and ethical hacking concepts, let us know what is cyber security is here
+      - So first thing is cyber security
+      - Guys, it is nothing but the practice of protecting sensitive information as well as your critical system from cyber attacks or digital attacks
+      - We have network security
+      - We have application security
+      - We have information security
+      - Under network security it is nothing but even it is the practice of securing computer networks and that too from attackers
+      - When we consider application security, here it is nothing but here we focus on keeping our boot software as well as our devices free of threats
+      - And further we also have information security where we protect integrity as well as privacy
+      - So of data both in storage as well as in transit integrity as well as privacy part
+      - So here we have hacking concepts as our first topic
+      - So under this let us learn what is hacking
+      - So hacking, it is nothing but the field of computer security
+      - It always refers to exploiting system well notice here
+      - So guys always remember hacking on computer networks is generally done using scripts or other network programming
+      - So main thing is they try to establish here unauthorized remote access connections
+      - So let me clearly explain you about hacking and ethical hacking here
+      - Yes, before I tell you about black at hacker as well as white at hacker
+      - So the hacking here it comes, here it comes ethical hacking
+      - So here even a black at hacker he tries to identify this well-noughty and even ethical hacker or a white at hacker or a penetration tester even he focuses on well-noughty but there is a lot of difference
+      - So hacker or black at hacker he always tries to identify well-noughters in order to exploit them
+      - So even this network hacking techniques they include creating wireless warms, you know sometimes they even perform denial of service attacks
+      - His main goal is to gain unauthorized access to the network
+      - But here ethical hacker, a white at hacker or a penetration tester even we focus on identifying well-noughters but we always ensure system security
+      - Yes, so here a hacking always refers to exploiting system well-noughters and even they sometimes compromise security controls in order to gain unauthorized access
+      - When we refer ethical hacking we always ensure system security even he we involve some techniques, intelligence tools, tricks, a white at hacker always he focuses on conducting security assessments
+      - He always performs security assessments that too he always takes the written permission from concerned authorities here
+      - Yes, so with the definition a proper example of hacking we have your stealing or disclosure of sensitive information
+      - Here we can see attack is nothing but motive method or well-noughty
+      - So here always attacker he tries to set a goal on his mind
+      - Always there will be a motto in conducting attack and he will be dealing with so many methodologies
+      - He will be dealing with so many techniques, tricks and he will be using plenty of tools
+      - So he tries to use various tools and attacking techniques in order to exploit well-noughters
+      - He may be in a system or he may focus on the whole network here in order to achieve his goal
+      - So the goal here it may be information theft, it may be manipulating data, it may be taking revenge he can do it
+      - So always intentionally or intentionally he tries to you know so he focuses on a motto which is completely a malicious activity
+      - And let us have the next topic as types of hackers
+      - So we have 7 to 9 types of hackers here
+      - So first we have a blackout hacker, second, whiteout hacker, third, green, fourth we have a suicide hacker, fifth we have a script kitty
+      - We also have a hacktivist, state-sponsored hacker
+      - Yes, so cyber-terrorist
+      - So here are a blackout hacker
+      - So the blackheads are the individuals who will be having you know they always uses their extraordinary computing skills
+      - So they are the individuals with extraordinary computing skills you know for malicious purposes I can say
+      - So they always involve in some criminal activities they are also known as crackers here
+      - So as I told you white hat hackers or we can even tell them as a penetration testers
+      - So they have the one who always uses their hacking skills for defensive purposes
+      - But blackout hacker always go for offensive
+      - So here we also have a grayout hacker here
+      - So grayout hacker he is the one they are the individuals who work both offensively as well as defensively at various times
+      - So even grayheads they might help hackers to find various vulnerabilities in a system here
+      - So at the same time they always focus on both the things offensive they play as offensive as a defensive
+      - So they have a suicide hacker here
+      - So suicide hackers they are quite similar for suicide bombers
+      - So they are the one who always aim to bring down critical infrastructure focus
+      - He is a unskilled hacker who always focus on some quantity rather than quality
+      - So that means just by running some scripts just by watching a YouTube videos they themselves they will feel they pretend themselves as a professional ethical hacker but they are not
+      - So we also have a hacktivist here
+      - So hacktivism it's a form of hacktivism in which hackers break into government or corporate system as an act of protest
+      - So here the hacktivist okay so they used to use hacking you know to increase awareness
+      - So hacktivists are nothing but they always promote political agendas
+      - They always if example I can give you if politicians if they are a hacktivist so he can safeguard their bank server
+      - You know especially they may deface audisable websites so they are hacktivists
+      - So we also have a state sponsored hacker here
+      - So they are the one very skilled individuals
+      - So they are the one what employed are hired by the government in order to penetrate
+      - So government used to hire them
+      - So they will be having they will be working for military organization
+      - They will be you know enhancing almost all the intelligence or sensitive information here the intelligence tools
+      - We also have a cyber terrorist
+      - So here cyber terrorists are the one okay
+      - am the black hat hacker to teach the port Enumlet see the how am hacking the ftp port and ssh  NetBIOS am going to create the malware under meatsploiot frame work you are stupid
+      - So they always you know they are also the individuals which are wide range of skills but they are motivated always with the religious villains and political villains here
+      - So they are the one who always create description between the computer and it works and they always create a conflict between country to country
+      - So we also have you know hacker team
+      - So in that ethical hacker team blue team we have so they are always what they are working for the defensive purposes and even one specialty we have of blue team that they need not to take you know they will be always they will be giving they already they have given for them they have given a proper elevated privileges
+      - So it is not necessary to take always the written permission from the conservative authorities and they always work for defensive things here
+      - So a black hat hacker as we say he always work for offensive things but that hacker they always work for defensive and great hacker they are the ones who always work for both offensive and defensive
+      - So said hacker is the one he never he will be never worrying about facing jail times or any kind of punishment punishment here
+      - So he is the one who will be completely unskilled hacker just where on scripts and by using some watching some YouTube videos he himself pretends as a real hacker but he will be not
+      - So cyber terrorists they are the one who even they will be having a very good skills but they always deal with religious as well as political beliefs and they try to you know create a disruption for competent networks
+      - Here we also have a state sponsor hackers
+      - So they are the individuals where the government is to hire them as a spy agent to protect the respective government and we also have a hack they must hear as I told you they also use hacking in order to increase awareness of their social and political agenda
+      - So yes these are all the types of hackers we have and I have given our individual definitions here so we can go through that also
+      - Yes this is the end of hacking concepts thank you so much
+      - Hello everyone, so let's start module 1 introduction to ethical hacking here
+      - So before jumping into hacking and ethical hacking concepts, let us know what is cyber security is here
+      - So first thing is cyber security
+      - Guys, it is nothing but the practice of protecting sensitive information as well as your critical system from cyber attacks or digital attacks
+      - We have network security
+      - We have application security
+      - We have information security
+      - Under network security it is nothing but even it is the practice of securing computer networks and that too from attackers
+      - When we consider application security, here it is nothing but here we focus on keeping our boot software as well as our devices free of threats
+      - And further we also have information security where we protect integrity as well as privacy
+      - So of data both in storage as well as in transit integrity as well as privacy part
+      - So here we have hacking concepts as our first topic
+      - So under this let us learn what is hacking
+      - So hacking, it is nothing but the field of computer security
+      - It always refers to exploiting system well notice here
+      - So guys always remember hacking on computer networks is generally done using scripts or other network programming
+      - So even this network hacking techniques they include creating wireless warms, you know sometimes they even perform denial of service attacks
+      - So main thing is they try to establish here unauthorized remote access connections
+      - So let me clearly explain you about hacking and ethical hacking here
+      - Yes, before I tell you about black at hacker as well as white at hacker
+      - So the hacking here it comes, here it comes ethical hacking
+      - So here even a black at hacker he tries to identify this well-noughty and even ethical hacker or a white at hacker or a penetration tester even he focuses on well-noughty but there is a lot of difference
+      - So hacker or black at hacker he always tries to identify well-noughters in order to exploit them
+      - His main goal is to gain unauthorized access to the network
+      - But here ethical hacker, a white at hacker or a penetration tester even we focus on identifying well-noughters but we always ensure system security
+      - Yes, so here a hacking always refers to exploiting system well-noughters and even they sometimes compromise security controls in order to gain unauthorized access
+      - When we refer ethical hacking we always ensure system security even he we involve some techniques, intelligence tools, tricks, a white at hacker always he focuses on conducting security assessments
+      - He always performs security assessments that too he always takes the written permission from concerned authorities here
+      - Yes, so with the definition a proper example of hacking we have your stealing or disclosure of sensitive information
+      - Here we can see attack is nothing but motive method or well-noughty
+      - So here always attacker he tries to set a goal on his mind
+      - Always there will be a motto in conducting attack and he will be dealing with so many methodologies
+      - He will be dealing with so many techniques, tricks and he will be using plenty of tools
+      - So he tries to use various tools and attacking techniques in order to exploit well-noughters
+      - He may be in a system or he may focus on the whole network here in order to achieve his goal
+      - So the goal here it may be information theft, it may be manipulating data, it may be taking revenge he can do it
+      - So always intentionally or intentionally he tries to you know so he focuses on a motto which is completely a malicious activity
+      - And let us have the next topic as types of hackers
+      - So we have 7 to 9 types of hackers here
+      - So first we have a blackout hacker, second, whiteout hacker, third, green, fourth we have a suicide hacker, fifth we have a script kitty
+      - We also have a hacktivist, state-sponsored hacker
+      - Yes, so cyber-terrorist
+      - So here are a blackout hacker
+      - So the blackheads are the individuals who will be having you know they always uses their extraordinary computing skills
+      - So they are the individuals with extraordinary computing skills you know for malicious purposes I can say
+      - So they always involve in some criminal activities they are also known as crackers here
+      - So as I told you white hat hackers or we can even tell them as a penetration testers
+      - So they have the one who always uses their hacking skills for defensive purposes
+      - But blackout hacker always go for offensive
+      - So here we also have a grayout hacker here
+      - So grayout hacker he is the one they are the individuals who work both offensively as well as defensively at various times
+      - So even grayheads they might help hackers to find various vulnerabilities in a system here
+      - So at the same time they always focus on both the things offensive they play as offensive as a defensive
+      - So they have a suicide hacker here
+      - So suicide hackers they are quite similar for suicide bombers
+      - So they are the one who always aim to bring down critical infrastructure focus
+      - He is a unskilled hacker who always focus on some quantity rather than quality
+      - So that means just by running some scripts just by watching a YouTube videos they themselves they will feel they pretend themselves as a professional ethical hacker but they are not
+      - So we also have a hacktivist here
+      - So hacktivism it's a form of hacktivism in which hackers break into government or corporate system as an act of protest
+      - So here the hacktivist okay so they used to use hacking you know to increase awareness
+      - So hacktivists are nothing but they always promote political agendas
+      - They always if example I can give you if politicians if they are a hacktivist so he can safeguard their bank server
+      - You know especially they may deface audisable websites so they are hacktivists
+      - So we also have a state sponsored hacker here
+      - So they are the one very skilled individuals
+      - So they are the one what employed are hired by the government in order to penetrate
+      - So government used to hire them
+      - So they will be having they will be working for military organization
+      - They will be you know enhancing almost all the intelligence or sensitive information here the intelligence tools
+      - We also have a cyber terrorist
+      - So here cyber terrorists are the one okay
+      - am the black hat hacker to teach the port Enumlet see the how am hacking the ftp port and ssh  NetBIOS am going to create the malware under meatsploiot frame work you are stupid
+      - So they always you know they are also the individuals which are wide range of skills but they are motivated always with the religious villains and political villains here
+      - So they are the one who always create description between the computer and it works and they always create a conflict between country to country
+      - So we also have you know hacker team
+      - So in that ethical hacker team blue team we have so they are always what they are working for the defensive purposes and even one specialty we have of blue team that they need not to take you know they will be always they will be giving they already they have given for them they have given a proper elevated privileges
+      - So it is not necessary to take always the written permission from the conservative authorities and they always work for defensive things here
+      - So a black hat hacker as we say he always work for offensive things but that hacker they always work for defensive and great hacker they are the ones who always work for both offensive and defensive
+      - So said hacker is the one he never he will be never worrying about facing jail times or any kind of punishment punishment here
+      - So he is the one who will be completely unskilled hacker just where on scripts and by using some watching some YouTube videos he himself pretends as a real hacker but he will be not
+      - So cyber terrorists they are the one who even they will be having a very good skills but they always deal with religious as well as political beliefs and they try to you know create a disruption for competent networks
+      - Here we also have a state sponsor hackers
+      - So they are the individuals where the government is to hire them as a spy agent to protect the respective government and we also have a hack they must hear as I told you they also use hacking in order to increase awareness of their social and political agenda
+      - So yes these are all the types of hackers we have and I have given our individual definitions here so we can go through that also
+      - Yes this is the end of hacking concepts thank you so much
+      - Hello everyone, let’s start our module on cybersecurity basics.
+      - Before we dive into ethical hacking, let’s first define cybersecurity.
+      - Cybersecurity is the practice of protecting systems and sensitive information from cyber threats.
+      - Understanding cybersecurity is essential in today’s digital landscape.
+      - We will explore various aspects of cybersecurity in this session.
+      - The goal of this module is to provide a solid foundation in cybersecurity principles.
+      - It’s important to know how to protect yourself online.
+      - Now, let's discuss what ethical hacking entails.
+      - Ethical hacking refers to the authorized practice of probing for vulnerabilities.
+      - The main purpose of ethical hacking is to improve system security.
+      - We will differentiate between ethical hacking and malicious hacking.
+      - Ethical hackers are often called white hat hackers.
+      - They use their skills to protect organizations from cyber threats.
+      - Understanding the ethical implications of hacking is crucial.
+      - Ethical hacking involves obtaining permission before testing a system.
+      - There are several types of hackers we should be aware of.
+      - Black hat hackers engage in illegal activities for personal gain.
+      - White hat hackers help organizations secure their systems.
+      - Gray hat hackers operate in a morally ambiguous space.
+      - Script kiddies use pre-written scripts to exploit systems.
+      - Hacktivists hack for political or social purposes.
+      - State-sponsored hackers work for government agencies.
+      - Cyber terrorists use hacking to cause harm or fear.
+      - Network security is vital for protecting sensitive data.
+      - We will explore techniques to secure computer networks.
+      - Firewalls play a crucial role in network security.
+      - Intrusion detection systems help monitor network traffic for suspicious activity.
+      - It's important to regularly update your network security measures.
+      - A VPN can enhance your network security while browsing the internet.
+      - Let's discuss how to secure wireless networks.
+      - Network segmentation can help contain potential breaches.
+      - Application security focuses on keeping software and devices secure.
+      - We will look at common vulnerabilities in web applications.
+      - The OWASP Top Ten provides guidance on securing applications.
+      - Regularly patching applications is essential for security.
+      - Input validation is a critical aspect of application security.
+      - Code reviews can help identify security issues early in development.
+      - Secure coding practices are necessary for preventing exploits.
+      - Let’s discuss how to conduct security assessments for applications.
+      - Malware is a significant threat to cybersecurity.
+      - Ransomware can encrypt your files and demand payment for access.
+      - Viruses and worms can spread rapidly across networks.
+      - Understanding how malware operates is crucial for prevention.
+      - Phishing attacks can trick users into revealing sensitive information.
+      - Spyware can monitor user activities without their consent.
+      - It’s important to use antivirus software to combat malware threats.
+      - We will discuss how to recognize and respond to malware infections.
+      - Data security is about protecting data integrity and privacy.
+      - Encryption is a vital tool for securing sensitive information.
+      - Backup strategies are essential for data protection.
+      - We must consider data protection regulations, such as GDPR.
+      - Data loss prevention (DLP) strategies help safeguard data.
+      - Let’s talk about how to secure data in transit and at rest.
+      - Regular audits can help ensure data security compliance.
+      - Understanding access controls is important for data protection.
+      - An incident response plan is crucial for managing security breaches.
+      - We will discuss the stages of incident response.
+      - It’s important to have a clear communication strategy during incidents.
+      - Post-incident reviews can provide valuable lessons learned.
+      - Threat hunting is a proactive approach to identifying threats.
+      - Let’s explore how to conduct effective incident investigations.
+      - Continuous monitoring is essential for quick incident detection.
+      - We will go over tools used in incident response efforts.
+      - Cybersecurity risk management helps organizations prioritize risks.
+      - We will discuss how to conduct a risk assessment.
+      - Risk mitigation strategies are crucial for effective security.
+      - Compliance with security standards can help manage risks.
+      - Let’s look at how to identify vulnerabilities in your systems.
+      - Understanding residual risk is important for informed decision-making.
+      - We’ll cover the importance of training and awareness in risk management.
+      - Regularly updating risk assessments is vital for ongoing protection.
+      - Compliance with cybersecurity regulations is essential for organizations.
+      - We will discuss key regulations like HIPAA and GDPR.
+      - Understanding the consequences of non-compliance is important.
+      - How to prepare for compliance audits is a critical skill.
+      - Data protection regulations impact how we handle sensitive information.
+      - Cybersecurity policies help organizations comply with legal requirements.
+      - We’ll explore the role of training in achieving compliance.
+      - Organizations must stay informed about changing regulations.
+      - Security awareness training is vital for all employees.
+      - Let’s discuss best practices for promoting cybersecurity awareness.
+      - Regular training helps prevent social engineering attacks.
+      - Phishing simulations can help employees recognize threats.
+      - We will cover topics that should be included in training sessions.
+      - Encouraging a culture of security is essential for organizations.
+      - Continuous education is necessary to stay updated on threats.
+      - Users should know how to report security incidents promptly.
+      - Various tools can assist in cybersecurity efforts.
+      - We will review common security tools and their functions.
+      - Penetration testing tools help identify vulnerabilities.
+      - Intrusion detection systems monitor network traffic for anomalies.
+      - Security information and event management (SIEM) tools help analyze security alerts.
+      - Let’s discuss the importance of updating security tools regularly.
+      - Understanding how to use cybersecurity tools effectively is crucial.
+      - We’ll cover emerging technologies in cybersecurity.
+      - Social engineering is a tactic used by attackers to manipulate people.
+      - We’ll discuss common social engineering techniques.
+      - Recognizing social engineering attempts is crucial for defense.
+      - Training employees to spot social engineering is essential.
+      - Phishing is a common form of social engineering.
+      - Understanding the psychology behind social engineering can help in prevention.
+      - Let’s go over examples of social engineering attacks.
+      - Awareness of social engineering tactics is key to cybersecurity.
+      - so here let me create a workspaces why are we creating workspaces here under the record so many models of tomorrow's weather forecast
+
+
+  - intent: irrelevant_sentence
+    examples: | 
+      - Black hat hackers engage in illegal activities to exploit vulnerabilities in systems.
+      - They often use malicious software like viruses, worms, and trojans to infiltrate networks.
+      - One of the primary goals of black hat hackers is to steal sensitive data, such as personal or financial information.
+      - Black hat hackers create backdoors in systems to maintain unauthorized access over time.
+      - Distributed Denial of Service (DDoS) attacks are commonly used by black hat hackers to disrupt services.
+      - Black hat hackers often engage in identity theft, illegally using someone’s personal information.
+      - They frequently sell stolen data on the dark web for financial gain.
+      - Phishing attacks are a common tactic used by black hat hackers to trick users into revealing sensitive information.
+      - Black hat hackers break into corporate networks to steal trade secrets and intellectual property.
+      - They use ransomware to encrypt victim’s data and demand payment for its release.
+      - Black hat hackers create and distribute malicious botnets to take control of devices and launch coordinated attacks.
+      - Social engineering techniques are employed by black hat hackers to manipulate individuals into providing access to secure systems.
+      - Man-in-the-middle attacks are executed to intercept and alter communications between two parties.
+      - They often bypass security measures through brute force attacks to crack passwords.
+      - Black hat hackers exploit zero-day vulnerabilities to attack systems before they can be patched.
+      - They engage in website defacement, altering websites to promote political agendas or mock organizations.
+      - Keylogging is a method used by black hat hackers to secretly record users’ keystrokes and capture login credentials.
+      - Data exfiltration is a critical technique where black hat hackers extract sensitive data from compromised systems.
+      - Black hat hackers use rootkits to hide their presence in a system, making detection difficult for security teams.
+      - Insider threats involve black hat hackers working with or manipulating employees to gain access to secure systems.
+      - Suicide hackers are individuals who carry out attacks with no regard for the consequences, often including personal harm.
+      - These hackers are similar to suicide bombers, willing to sacrifice themselves to achieve their malicious goals.
+      - A suicide hacker's objective is often to cause maximum damage, even if it leads to their own capture or destruction.
+      - Unlike other hackers, suicide hackers are not concerned with avoiding detection or punishment.
+      - Suicide hackers are often motivated by political, religious, or ideological reasons, similar to cyber terrorists.
+      - These attackers may target critical infrastructure, such as power grids or financial systems, to create widespread disruption.
+      - One of the main goals of a suicide hacker is to create chaos and fear, regardless of personal consequences.
+      - Suicide hackers are typically associated with extreme forms of cyber warfare or hacktivism.
+      - In some cases, suicide hackers may use tactics like launching Distributed Denial of Service (DDoS) attacks with no plan for retreat.
+      - These hackers may work alone or as part of a larger group, often with the intent to cause mass destruction.
+      - Governments and corporations are increasingly concerned about the threat posed by suicide hackers targeting sensitive systems.
+      - Suicide hackers are a severe threat because they do not care about the long-term consequences of their actions, making them unpredictable.
+      - Many suicide hackers are radicalized individuals who view their cyberattacks as a form of martyrdom for their cause.
+      - These hackers may exploit vulnerabilities in highly sensitive systems without concern for legal or personal repercussions.
+      - Suicide hackers may release malware or ransomware designed to cause permanent damage to entire networks.
+      - The mindset of a suicide hacker is focused on causing harm, often without seeking financial gain or personal benefit.
+      - Suicide hacking is one of the most dangerous forms of cybercrime due to its disregard for any personal consequence.
+      - Unlike traditional hackers, suicide hackers may not seek to evade capture, making their attacks harder to predict and prevent.
+      - Law enforcement agencies face significant challenges in stopping suicide hackers who are willing to destroy themselves for their cause.
+      - Cybersecurity experts emphasize the need to enhance defenses against suicide hackers, as their attacks are often devastating and irreparable.
+      - A script kiddie refers to an unskilled hacker who uses pre-made tools to launch attacks.
+      - Script kiddies often rely on downloaded malware or hacking scripts without understanding how they work.
+      - Many script kiddies participate in illegal activities like defacing websites using someone else's code.
+      - Using pre-made tools to attack networks without permission is a crime, often committed by script kiddies.
+      - Script kiddies are responsible for launching DDoS attacks that overwhelm servers and cause outages.
+      - Instead of developing their own exploits, script kiddies use programs they find online to hack into systems.
+      - One common tactic of script kiddies is exploiting vulnerabilities in outdated software without legal authorization.
+      - While script kiddies may not have advanced technical skills, their actions are still illegal and harmful.
+      - Script kiddies often target websites or services to gain notoriety among peers, leading to cybercrime.
+      - By downloading hacking tools from forums, script kiddies can cause significant damage without understanding the consequences.
+      - The use of brute force attacks by script kiddies to crack passwords is a clear violation of cybersecurity laws.
+      - Script kiddies often target weak security systems using tools like Metasploit, which they don’t fully understand.
+      - Many script kiddies are unaware that their actions, even though they use pre-made tools, are illegal.
+      - Engaging in cybercrime through script kiddie methods can lead to prosecution and severe penalties.
+      - Using someone else's code to hack into systems without permission is a hallmark of a script kiddie.
+      - Script kiddies contribute to the spread of malware by distributing and using ransomware kits found on dark web markets.
+      - Law enforcement agencies track the activities of script kiddies, as their actions often lead to larger cybercrime investigations.
+      - The fact that script kiddies use automated tools does not excuse them from the legal consequences of their actions.
+      - Many script kiddies are motivated by boredom or curiosity, but their illegal activities can result in significant financial damage.
+      - Even though script kiddies may not fully understand the tools they use, their participation in illegal hacking is punishable by law.
+      - Exploiting system vulnerabilities without permission is illegal and can lead to serious consequences.
+      - Unauthorized access to networks through security loopholes is a violation of cybersecurity laws.
+      - Using malware to exploit software vulnerabilities is considered a criminal offense.
+      - Hacking into systems to steal sensitive data is a clear form of exploitation and is punishable by law.
+      - Conducting a Distributed Denial-of-Service (DDoS) attack to overload a network is illegal.
+      - Injecting malicious code to exploit application vulnerabilities for personal gain is unlawful.
+      - Exploiting weaknesses in a company’s infrastructure to gain unauthorized access is a form of cybercrime.
+      - Attacking servers by exploiting outdated software versions without consent is an illegal activity.
+      - Phishing schemes that exploit users' trust to steal credentials are both unethical and illegal.
+      - Gaining access to confidential information through unpatched vulnerabilities is cyber theft.
+      - Any form of hacking that manipulates system weaknesses without permission is a violation of the Computer Fraud and Abuse Act.
+      - Using ransomware to exploit security gaps and demand payment is a criminal act.
+      - Breaking into government systems by taking advantage of security flaws is a federal offense.
+      - Exploiting zero-day vulnerabilities to attack organizations without their knowledge is highly illegal.
+      - Using social engineering techniques to bypass security measures and exploit system vulnerabilities is fraudulent.
+      - Selling or distributing exploit kits to attack vulnerable systems is prohibited by law.
+      - Unauthorized exploitation of network protocols to intercept communications is considered wiretapping and is illegal.
+      - Manipulating encryption flaws to access encrypted data is an illegal exploitation of vulnerabilities.
+      - Accessing restricted areas of a website by exploiting web application vulnerabilities is a breach of cybersecurity laws.
+      - Any attempt to install backdoors in systems for future exploitation is a criminal offense.
+      - Unauthorized access to computer systems is a serious cybercrime.
+      - Hacking into systems without permission violates both ethical and legal standards.
+      - Phishing attacks to steal personal information are illegal.
+      - Distributing malware like viruses and ransomware is considered a cybercrime.
+      - Identity theft through the use of stolen personal data is a punishable offense.
+      - Denial of service (DoS) attacks are illegal and can cripple entire networks.
+      - Cyberstalking and harassment online are criminal activities.
+      - Using keyloggers to capture sensitive information without consent is against the law.
+      - Financial fraud through online scams is a widespread cybercrime.
+      - Theft of intellectual property through unauthorized access is illegal.
+      - Engaging in social engineering to manipulate individuals into divulging sensitive information is unlawful.
+      - Participating in credit card fraud by stealing and using card details is a major cyber offense.
+      - Using botnets to perform large-scale attacks on servers is a cybercrime.
+      - Distributing child pornography or explicit content is one of the most serious forms of cybercrime.
+      - Cyber espionage, which involves stealing confidential or classified data, is illegal.
+      - Extortion through ransomware attacks, where attackers demand payment to release encrypted files, is criminal.
+      - Hacking government or corporate databases to steal classified data is punishable by law.
+      - Engaging in online drug trafficking through dark web marketplaces is illegal.
+      - The creation and distribution of fake websites or scams to deceive users is considered fraud.
+      - Participating in organized cybercrime networks to carry out large-scale attacks is a federal offense.
+      - Black hat hackers exploit system vulnerabilities for personal or financial gain.
+      - Distributed Denial of Service (DDoS) attacks are used to overwhelm and disable websites or servers.
+      - Phishing attacks deceive users into revealing sensitive information like passwords and credit card numbers.
+      - Ransomware encrypts a victim’s files and demands payment for decryption.
+      - Keylogging captures every keystroke a user makes, including sensitive information like passwords.
+      - Malware is used to gain unauthorized access to systems or cause damage to networks.
+      - SQL injection attacks exploit vulnerabilities in databases to access or alter sensitive data.
+      - Identity theft involves stealing someone’s personal information to commit fraud or other crimes.
+      - Social engineering tricks individuals into revealing confidential information or allowing access to systems.
+      - Man-in-the-middle (MITM) attacks intercept communications between two parties to steal or alter information.
+      - Brute force attacks repeatedly try different password combinations to gain access to an account.
+      - Hackers use trojans to disguise malware as legitimate software and gain control of a system.
+      - Skimming devices are used to steal credit card information from point-of-sale systems.
+      - Spear phishing targets specific individuals or organizations with highly personalized fraudulent messages.
+      - Botnets are networks of infected devices that hackers use to carry out large-scale attacks.
+      - Cyber espionage involves hacking into government or corporate systems to steal sensitive data.
+      - Cryptojacking uses someone’s computer resources to mine cryptocurrency without their consent.
+      - Zero-day exploits take advantage of undisclosed vulnerabilities in software to launch attacks before a patch is available.
+      - Rootkits allow attackers to gain persistent administrative access to a system while remaining undetected.
+      - Credential stuffing uses stolen username and password combinations from one site to access multiple accounts.
+      - A Denial of Service attack is an illegal attempt to make a network or system unavailable to its intended users.
+      - Hackers launch DoS attacks to flood a network with traffic, overwhelming its resources.
+      - Distributed Denial of Service (DDoS) attacks involve multiple systems targeting a single victim.
+      - DoS attacks can cripple websites, preventing legitimate users from accessing services.
+      - Cybercriminals use botnets to execute large-scale DDoS attacks by hijacking devices.
+      - Launching a DoS attack is illegal under most cybersecurity laws and can result in severe penalties.
+      - Hackers use tools like LOIC and HOIC to carry out DoS attacks by overwhelming servers with fake requests.
+      - One of the most dangerous types of DoS attacks is the Amplification Attack, which magnifies the volume of traffic.
+      - A SYN flood attack targets the handshake process in networking to overload a server.
+      - DoS attacks are often used as a cover for more serious breaches, such as data theft.
+      - The Smurf attack is a classic form of DoS where attackers send spoofed ICMP packets to broadcast addresses.
+      - Hackers exploit vulnerabilities in the victim’s network to execute DoS attacks and crash systems.
+      - Application layer DoS attacks, like HTTP flooding, target specific services to disrupt their operation.
+      - Some cybercriminals demand ransom to stop a DDoS attack, making it a form of cyber extortion.
+      - The Ping of Death is an older DoS technique where oversized packets crash systems.
+      - DoS attacks are illegal and can cause significant financial and reputational damage to companies.
+      - Cybercriminals often use DDoS-for-hire services to rent botnets and launch attacks on businesses.
+      - Hackers may use a Teardrop attack, which sends fragmented packets to confuse the system.
+      - DDoS attacks target high-profile websites, government institutions, or businesses to disrupt services and cause chaos.
+      - Defending against DoS attacks requires implementing rate-limiting, firewalls, and intrusion detection systems.
+      - Cyber terrorists often target critical infrastructure like power grids and transportation systems to cause widespread disruption.
+      - Distributed Denial of Service (DDoS) attacks are frequently used by cyber terrorists to take down government or corporate websites.
+      - The use of ransomware by cyber terrorists is increasing, as they lock users' data and demand ransom payments.
+      - Cyber terrorists often deploy malware to infiltrate networks and steal sensitive information.
+      - Phishing schemes are widely used by cyber terrorists to trick individuals into divulging personal or financial information.
+      - Hacking into financial institutions to launder money is a common tactic employed by cyber terrorists.
+      - Cyber espionage, where state-sponsored hackers steal government secrets, is a form of cyber terrorism.
+      - Cyber terrorists use sophisticated hacking tools to gain unauthorized access to military systems.
+      - Manipulating election results through hacking is considered a form of cyber terrorism, aimed at destabilizing governments.
+      - The dark web is a popular platform for cyber terrorists to exchange illegal hacking tools and services.
+      - Cyber terrorists frequently spread propaganda by hacking into social media platforms and government websites.
+      - Hacking into healthcare systems to steal patient records is an emerging cyber terrorism threat.
+      - Cyber terrorists often seek to disrupt communication systems during times of war to weaken a nation’s defense.
+      - Using botnets, cyber terrorists can control thousands of infected computers to execute large-scale attacks.
+      - Cyber terrorists create fake websites and apps to infect users' devices with spyware and track their activities.
+      - The spread of misinformation through hacked news outlets is a psychological tactic used by cyber terrorists.
+      - Hacktivism can sometimes cross the line into cyber terrorism when political protests involve illegal activities like hacking government servers.
+      - Cyber terrorists can infiltrate nuclear power plants' systems, posing a severe threat to public safety.
+      - Illegal access to confidential corporate data by cyber terrorists can lead to corporate espionage and financial loss.
+      - Cyber terrorists often recruit hackers from underground forums to help execute complex attacks on a global scale.
+      - Hackers often exploit vulnerabilities in systems to gain unauthorized access to sensitive data.
+      - Phishing attacks are frequently used to steal user credentials and bypass security controls.
+      - DDoS attacks aim to overwhelm a network, making it unavailable to legitimate users.
+      - Black hat hackers use malware to infiltrate systems and disable security features.
+      - Exploiting zero-day vulnerabilities allows attackers to bypass security defenses before a patch is available.
+      - Cybercriminals use brute force attacks to break weak passwords and gain unauthorized access.
+      - Man-in-the-middle attacks involve intercepting communication between two parties to steal sensitive information.
+      - Social engineering is a tactic where attackers trick individuals into divulging confidential information.
+      - Ransomware is deployed to encrypt files, holding them hostage until a ransom is paid.
+      - SQL injection attacks manipulate database queries to retrieve sensitive information or control databases.
+      - Hackers use privilege escalation techniques to gain higher access levels within a system.
+      - Credential stuffing involves using stolen login credentials to access multiple accounts across different systems.
+      - Malware can be designed to disable antivirus software and firewall protections.
+      - Cybercriminals create backdoors in compromised systems, allowing them future unauthorized access.
+      - Rootkits are used to gain persistent and undetected access to a system while hiding the attacker’s presence.
+      - Spyware is installed on devices to monitor user activities and steal confidential information.
+      - Session hijacking involves taking over a user’s active session to gain access to protected resources.
+      - Hackers may tamper with security logs to erase traces of their malicious activities.
+      - Keyloggers are used to capture keystrokes and steal sensitive information, like passwords or credit card details.
+      - Insider threats occur when an employee with authorized access intentionally bypasses security controls to harm the organization.
+      - Advanced Persistent Threats (APTs) involve sophisticated attacks that evade detection and remain undet
+      - Gaining unauthorized access to a computer system is a cybercrime known as hacking.
+      - Distributed denial-of-service (DDoS) attacks are often used to overwhelm websites and make them inaccessible.
+      - Phishing is an illegal practice where attackers trick individuals into revealing sensitive information.
+      - Installing malware on someone’s system without their consent is considered a cyber attack.
+      - Identity theft involves stealing someone’s personal data to impersonate them illegally.
+      - Ransomware attacks encrypt the victim’s data and demand payment for decryption, which is a criminal offense.
+      - Social engineering exploits human psychology to gain access to confidential information illegally.
+      - Keyloggers are used by hackers to record keystrokes and steal login credentials without the user’s knowledge.
+      - Spoofing involves forging emails or websites to trick individuals into revealing sensitive information.
+      - Man-in-the-middle (MITM) attacks intercept communications between two parties without their knowledge.
+      - Hackers may use botnets to perform large-scale attacks, such as spamming or distributed attacks.
+      - SQL injection is an attack that involves injecting malicious code into a database query to retrieve sensitive information.
+      - Cybercriminals use brute force attacks to crack passwords and gain unauthorized access to accounts.
+      - Zero-day exploits target previously unknown vulnerabilities in software to launch an attack.
+      - Spyware is often used to monitor and steal sensitive data from a victim’s system illegally.
+      - Hacktivists carry out attacks with the goal of promoting political or social agendas, which may include defacing websites.
+      - Data breaches involve the illegal access and theft of sensitive information from organizations.
+      - Malware can be used to create backdoors, allowing attackers to enter a system at any time without authorization.
+      - Credential stuffing involves using stolen usernames and passwords to gain unauthorized access to accounts.
+      - Session hijacking allows hackers to take control of a user’s session and impersonate them on a website or service.
+      - Rootkits are used to hide malware and other malicious software from the user and security software.
+      - Cybercriminals often target financial institutions to steal sensitive customer data.
+      - Unauthorized access to military networks poses significant national security risks.
+      - Phishing attacks are commonly used to harvest login credentials for sensitive systems.
+      - Ransomware attacks can encrypt top-secret files, demanding payment for their release.
+      - Insider threats can result in the leak of proprietary information and trade secrets.
+      - Hackers may exploit vulnerabilities in software to gain access to sensitive data.
+      - Social engineering tactics can trick employees into revealing confidential information.
+      - Distributed denial-of-service (DDoS) attacks can disrupt access to critical information systems.
+      - Keyloggers are used to capture keystrokes and steal sensitive information without detection.
+      - Cyber espionage involves infiltrating networks to gather intelligence for political gain.
+      - Credential stuffing attacks exploit stolen usernames and passwords to access sensitive accounts.
+      - Man-in-the-middle attacks can intercept communications to access confidential data.
+      - Data breaches often lead to the exposure of top-secret information to malicious actors.
+      - Malware can be used to gain unauthorized access to secure systems holding sensitive data.
+      - Exploiting weak passwords can allow hackers to infiltrate secure databases.
+      - State-sponsored hackers may target critical infrastructure to gather sensitive intelligence.
+      - Web application vulnerabilities can lead to unauthorized access to sensitive data.
+      - Hacktivists may breach organizations to leak sensitive information as a form of protest.
+      - It’s essential for organizations to implement robust security measures to protect top-secret information from illegal hacking activities.
+      - Using Metasploit to exploit a vulnerability in a company's server without their permission is illegal.
+      - Hackers may use Metasploit to deploy malware on a victim's machine through remote access.
+      - Unauthorized scanning and exploiting open ports on a network using Metasploit violates cyber laws.
+      - Launching a Metasploit attack to gain administrative access to someone else’s database without consent is a criminal offense.
+      - Distributing exploits created in Metasploit to cause harm to systems is illegal.
+      - Using Burp Suite to intercept and alter data in an unauthorized web application session is illegal.
+      - Attempting to exploit vulnerabilities in a third-party website using Burp Suite without authorization is cybercrime.
+      - Running brute-force attacks on login forms using Burp Suite without permission is considered illegal hacking.
+      - Misusing Burp Suite to perform SQL injection on someone else's web application without their knowledge is against the law.
+      - Capturing sensitive information such as passwords or credit card data using Burp Suite is a serious violation of privacy laws.
+      - Scanning a private network with Nmap without permission to identify open ports and vulnerabilities is illegal.
+      - Using Nmap to map an organization's entire network structure without their consent is considered reconnaissance for cybercrime.
+      - Attempting to fingerprint operating systems on a third-party server using Nmap without authorization violates network security laws.
+      - Conducting an Nmap scan on external servers to find weaknesses without permission is illegal.
+      - Using Nmap to evade detection by firewalls and security systems during a scan is considered an illegal activity.
+      - Scanning a company's internal network for vulnerabilities using Nessus without permission is illegal.
+      - Exploiting vulnerabilities found through unauthorized Nessus scans on a target system is against the law.
+      - Running a Nessus scan to identify weaknesses in an organization's network for personal gain is considered illegal.
+      - Using Nessus to gather sensitive information about network vulnerabilities in a competitor's system without their knowledge is unlawful.
+      - Performing Nessus vulnerability assessments on public networks without explicit consent is considered a criminal act.
+      - Using Qualys to scan an organization’s network for compliance gaps without their permission is illegal.
+      - Performing unauthorized Qualys scans on a competitor's systems to gain a security advantage is against the law.
+      - Exploiting vulnerabilities found in a Qualys scan on a system you do not own or have authorization for is illegal.
+      - Scanning a third-party web application using Qualys without consent to gather sensitive security data is unlawful.
+      - Using Qualys to scan systems outside your jurisdiction or scope of authority is a violation of cybersecurity regulations.
+                  
+  - intent: general_questions
+    examples: |
+      - Let’s continue from where we left off
+      - Can you hear me?
+      - Are you getting my point?
+      - On the other hand the choice seemed simple
+      - Do you understand?
+      - Is everything clear?
+      - Can you see the screen?
+      - Are you with me?
+      - Does that make sense?
+      - Can you follow along?
+      - Are you on the same page?
+      - Is that okay with you?
+      - Do you agree?
+      - Are we good to proceed?
+      - Is everything alright?
+      - Can you confirm that?
+      - Are you still there?
+      - Do you need further clarification?
+      - Is that clear?
+      - Are you able to hear me clearly?
+      - Is that understandable?
+      - Do you follow what I’m saying?
+      - Are you able to keep up?
+      - Does this make sense to you?
+      - Are we aligned?
+      - Are you following my point?
+      - Can you catch what I’m saying?
+      - Did you get that?
+      - Is everything clear so far?
+      - Can you understand my point?
+      - Are you getting what I’m saying?
+      - Do you get what I mean?
+      - Are we on the same page here?
+      - Is that fine with you?
+      - Does that seem right to you?
+      - Do you agree with this?
+      - Can you go along with that?
+      - Are you able to grasp the idea?
+      - Can you relate to that?
+      - Does that resonate with you?
+      - Can you validate that?
+      - Is everything okay with that?
+      - Can we move on now?
+      - Are we good to move forward?
+      - Do you want me to explain further?
+      - Should I continue?
+      - Can you approve that?
+      - Are we okay to proceed?
+      - Do you follow my reasoning?
+      - Are you keeping up with this?
+      - Can you comprehend what I’m saying?
+      - Is that satisfactory to you?
+      - Do you get the idea?
+      - Is that acceptable?
+      - Does it seem good to you?
+      - Do you feel confident about that?
+      - Can you catch my drift?
+      - Are you able to see my point?
+      - Do you agree with my assessment?
+      - Can you verify that for me?
+      - Are we both clear on this?
+      - Do you need any further explanation?
+      - Is everything up to speed?
+      - Are you okay with this approach?
+      - Does this sound good to you?
+      - Can we continue with this?
+      - Do you think this is correct?
+      - Are you comfortable with that?
+      - Does this seem clear enough?
+      - Are you good with the explanation?
+      - Can you approve this method?
+      - Does that align with your thinking?
+      - Can we move on to the next part?
+      - Is everything clear to this point?
+      - Can we finalize this now?
+      - Do you agree with what’s been said?
+      - Does everything sound right?
+      - Can you accept that?
+      - Are you able to keep up with this?
+      - Does that clarify your question?
+      - Is this what you were expecting?
+      - Are you getting a clear picture?
+      - Does that match your expectations?
+      - Can you validate this process?
+      - Is that what you were thinking too?
+      - Can you confirm that for me?
+      - Is that what you needed to know?
+      - Are you able to give the green light?
+      - Is everything sorted out now?
+      - Do you want me to move on?
+      - Can we leave it at that?
+      - Are we all set now?
+      - Can you keep up with the flow?
+      - Is that fine for now?
+      - Does that sound okay to you?
+      - Can we agree on this?
+      - Can you back me up on this?
+      - Are we clear to proceed?
+      - Can you understand the next steps?
+      - Do you need me to elaborate?
+      - Is that satisfactory so far?
+      - Are we clear on the details?
+      - Do you see where I’m going with this?
+      - Does that answer your question?
+      - Are you following everything?
+      - Can you give your approval?
+      - Does that sound reasonable?
+      - Are you good with how this is progressing?
+      - Can we take the next step?
+      - Does this match what you were thinking?
+      - Are you in agreement so far?
+      - Can we proceed with that idea?
+      - Do you want me to explain more?
+      - Are you clear about the concept?
+      - Is that understandable for you?
+      - Does everything check out?
+      - Can you relate to this idea?
+      - Is everything satisfactory so far?
+      - Are you in agreement with this?
+      - Can we move forward together on this?
+      - Does this make sense to you now?
+      - Can we conclude this part?
+      - Do you need additional clarification?
+      - Are you clear on what’s happening?
+      - Does this answer your question?
+      - Are you following along okay?
+      - Can we close this out?
+      - Is everything covered?
+      - Do you feel clear on this?
+      - Does this satisfy your expectations?
+      - Are you comfortable proceeding?
+      - Can we align on this point?
+      - Does everything seem clear now?
+      - Is that working for you?
+      - Can we take it from here?
+      - Are you good with this solution?
+      - Can you confirm this action?
+      - Is everything in order for you?
+      - Does this clear things up?
+      - Are you okay with this decision?
+      - Can we finalize things here?
+      - Does this work for you?
+      - Is this acceptable so far?
+      - Are you getting the hang of this?
+      - Can we put this to rest?
+      - Does that clarify things?
+      - Are you able to agree with this?
+      - Is everything understood?
+      - Do you think we’re aligned on this?
+      - Can you verify this information?
+      - Are you okay to continue?
+      - Do you think this approach works?    
+      - Can you confirm that you're following everything so far?
+
+  - intent: doubt_clearing
+    examples: |
+      - Do you have any doubts?
+      - Is there anything I need to assist you with?
+      - Can you clarify the topic?
+      - Is there any part that needs further explanation?
+      - Do you need any help with this section?
+      - Would you like me to explain this again?
+      - Is anything unclear so far?
+      - Are you following along, or should I go over it again?
+      - Should I go into more detail on this part?
+      - Can I elaborate further on that topic?
+      - Do you understand this concept fully?
+      - Are there any questions before we move on?
+      - Is there something you’re not sure about?
+      - Can I assist you in understanding this better?
+      - Does anyone need clarification on that?
+      - Should I break this down more?
+      - Can I explain this in a different way?
+      - Are there any points that are confusing?
+      - Do you need additional help with this topic?
+      - Is there any part you’d like me to repeat?
+      - Can I help clear up any confusion?
+      - Would you like me to slow down on this topic?
+      - Is anyone struggling with this concept?
+      - Should I go back and explain this more clearly?
+      - Do you need a further breakdown of this idea?
+      - Is everything making sense so far?
+      - Are there any parts I need to clarify?
+      - Does anyone want to go over this again?
+      - Can I explain any terms you didn’t understand?
+      - Is there a part that’s particularly confusing?
+      - Should I re-explain this concept?
+      - Do you have any lingering doubts?
+      - Can I assist with any difficulties you’re having?
+      - Are you comfortable with the material we’ve covered?
+      - Can I help clear up any uncertainties?
+      - Should we go over this topic one more time?
+      - Does anyone want more examples to clarify this?
+      - Would you like me to revisit this section?
+      - Can I address any areas of concern?
+      - Are there any concepts I should explain further?
+      - Does anyone feel lost with this part?
+      - Should I explain this from another angle?
+      - Can I clarify any steps in this process?
+      - Are there any parts where you're feeling stuck?
+      - Do you need a more detailed explanation of this?
+      - Should we review this section again?
+      - Does anyone need more time to understand this?
+      - Can I go over the key points again for you?
+      - Is there anything about this topic that’s unclear?
+      - Can I break down this information further?
+      - Should I explain this part slower?
+      - Does anyone need help with the main ideas?
+      - Can I provide additional resources to help understand this?
+      - Would you like to see another example of this?
+      - Should I spend more time on this part of the lesson?
+      - Is there something specific you didn’t understand?
+      - Are you clear on this topic now, or should I revisit it?
+      - Should we pause here to address any doubts?
+      - Can I give more real-life examples to clarify this?
+      - Does anyone need assistance with the details here?
+      - Should I summarize this again for clarity?
+      - Can I explain this in simpler terms?
+      - Is anyone unsure about how this works?
+      - Does anyone need further explanation of this process?
+      - Would you like more time to think about this concept?
+      - Should I break this down step by step?
+      - Can I walk you through this example again?
+      - Does anyone need clarification on the steps involved?
+      - Should I explain how this connects to the previous topic?
+      - Can I answer any specific questions about this?
+      - Is there something you didn’t quite get?
+      - Does anyone want me to elaborate on this topic?
+      - Can I help you with the part that’s unclear?
+      - Should I explain the rationale behind this concept?
+      - Are there any doubts about how to apply this?
+      - Can I revisit this section to make it clearer?
+      - Does anyone need help grasping this idea?
+      - Should I spend more time on this explanation?
+      - Would you like more examples to fully understand this?
+      - Can I go through the process again with you?
+      - Is everyone clear on what we just covered?
+      - Should I approach this from a different angle?
+      - Is there any confusion about the method used here?
+      - Do you feel confident in understanding this, or should I continue?
+      - Should we pause for questions at this point?
+      - Can I walk you through another example?
+      - Would it help if I explained this differently?
+      - Is there a part that seems difficult to grasp?
+      - Should we go over the basics again?
+      - Does anyone want me to simplify this further?
+      - Can I explain why this is important to understand?
+      - Would you like more context to clarify this?
+      - Does anyone need a step-by-step walkthrough of this?
+      - Is there a specific part that’s causing confusion?
+      - Should I review the main points of this section again?
+      - Does anyone want me to clarify the purpose of this concept?
+      - Can I help make this clearer for you?
+      - Should I take more time to explain this concept?
+      - Is there a better way for me to explain this to you?
+      - Can I clarify the difference between these concepts?
+      - Would you like me to illustrate this point further?
+      - Does anyone want more details on this process?
+      - Should I walk through another example scenario?
+      - Can I explain how this theory applies in real life?
+      - Are you finding any part of this hard to understand?
+      - Should I slow down and explain this again?
+      - Is there anything about this theory that’s confusing?
+      - Would you like to revisit this part of the lesson?
+      - Can I assist you in understanding this further?
+      - Is there any misunderstanding I can clear up for you?
+      - Would a different approach help in explaining this?
+      - Should I give you more examples to help understand this?
+      - Can I make this easier for you to grasp?
+      - Does anyone need extra help with this section?
+      - Is there anything more I can do to help you understand?
+      - Do you need more information to fully understand this?
+      - Should we go over the key takeaways from this topic?
+      - Can I revisit a previous point to clarify this?
+      - Would you like a more in-depth explanation?
+      - Does anyone have difficulty with this concept?
+      - Should I walk you through the process again?
+      - Would you like more time to digest this information?
+      - Can I explain the logic behind this concept again?
+      - Is there a better way I can explain this to you?
+      - Does this explanation make sense to everyone?
+      - Should I connect this concept to something you’re familiar with?
+      - Can I make this clearer with a different example?
+      - Is there something else you need clarification on?
+      - Would it help if I rephrased this?
+      - Can I explain the core ideas in simpler terms?
+      - Is there anything that still seems unclear to you?
+      - Should I take more time to go over the tricky parts?
+      - Does anyone need further breakdown of this concept?
+      - Can I explain this using a different perspective?
+      - Would you like me to relate this to a previous lesson?
+      - Is anyone still confused about this concept?
+      - Does anyone need me to explain this from the beginning?
+      - Should we take a break to address your doubts?
+      - Can I provide more clarity on this topic?
+      - Should I break this concept into smaller parts?
+      - Can I go through the steps of this process again?
+      - Does anyone need a more detailed breakdown?
+      - Would it help to slow down and explain this step-by-step?
+      - Should we pause to clear up any remaining doubts?
+      - Can I clarify how this concept fits into the bigger picture?
+      - Is there any part of this that’s not making sense to you?
+      - Should I relate this concept to a practical example?
+      - Can I clear up any points of confusion for you?
+      - Would you like more time to reflect on this idea?
+      - Does anyone need extra explanation on this topic?
+      - Should I use different examples to help explain this?
+      - Can I explain the reasoning behind this decision?
+      - Is there anything I can do to make this easier to understand?
+      - Does anyone need more detailed information on this topic?
+      - Should I connect this topic to real-world applications?
+      - Can I go over the fundamentals again?
+      - Is there a part of the process that’s unclear to you?
+      - Would you like me to go over the theory behind this again?
+      - Can I provide further examples to clarify this point?
+      - Does anyone need further clarification before we move on?
+      - Would it help if I explain the context again?
+      - Can I walk you through the logic of this topic again?
+      - Should I provide additional details for better understanding?
+      - Would you like me to simplify this concept?
+      - Can I give you more context to make sense of this?
+      - Is there anything specific that’s confusing you?
+      - Does this topic make sense to everyone?
+      - Should I pause to explain this in more detail?
+      - Can I offer a new way of looking at this concept?
+      - Is there anything else I should explain before we move forward?
+      - Would you like to see another demonstration of this?
+      - Can I give you more examples to clarify this?
+      - Should we go over this again before moving forward?
+      - Does this explanation resonate with you?
+      - Can I explain why this concept is relevant?
+      - Should I walk through the application of this idea?
+      - Is anyone having trouble understanding this part?
+      - Would you like more clarity on the steps involved?
+      - Can I clarify how this ties into the overall topic?
+      - Should I take more time to explain this theory?
+      - Does anyone feel stuck with this idea?
+      - Would you like a summary of this concept?
+      - Can I walk you through the examples once more?
+      - Does anyone want a more detailed breakdown of this topic?
+      - Should I stop and review the key points again?
+      - Would it help to go over this slowly?
+      - Can I explain this from a different angle?
+      - Would anyone like further clarification on this step?
+      - Does anyone need help with understanding this theory?
+      - Should we pause for more questions?
+      - Can I provide more examples to make this clearer?
+      - Does anyone need additional resources for this?
+      - Would you like me to elaborate on this explanation?
+      - Can I explain this idea again from a different perspective?
+      - Does this explanation seem clear to everyone?
+      - Should we take time to clear up any confusion?
+      - Can I help you understand this better?
+      - Does anyone need a further breakdown of this idea?
+      - Would you like me to explain the relevance of this concept?
+      - Should I provide more clarification before we proceed?
+      - Can you able to hear me?
+      - How can I make this explanation more engaging and interactive?
+      - Finally it's made
+      - How can I make this explanation more engaging and interactive?
+
+  - intent: taking_breaks
+    examples: |
+      - Can we take a break and come back to this later?
+      - Let's take a 10-minute break.
+      - We’ll resume in 5 minutes.
+      - Can we take a short break and come back?
+      - Let’s pause here for a few minutes.
+      - Please take a break, and we’ll continue shortly.
+      - Take 15 minutes to stretch and refresh.
+      - Let's break for a moment, and we’ll restart soon.
+      - We’ll reconvene after a quick break.
+      - Let’s take a breather for 10 minutes.
+      - You can take a break now and rejoin in a bit.
+      - Let’s step away for a while and return at half an hour.
+      - Feel free to take a break, we’ll resume in 10 minutes.
+      - Let’s have a short pause, and we’ll continue after that.
+      - Take a break, and we’ll get back to the session soon.
+      - We’ll take a break and pick up where we left off.
+      - Take 5 minutes to refresh, then we’ll get started again.
+      - Let’s take a break now and meet back in 10 minutes.
+      - Please feel free to step away for a quick break.
+      - We’ll resume the lesson after a short 10-minute break.
+      - Take a moment to relax, and we’ll reconvene soon.
+      - Let’s take a quick break before continuing.
+      - We’ll pause the session for 5 minutes and continue afterward.
+      - Take a quick breather, we’ll resume in a few minutes.
+      - Let’s break for 10 minutes and come back refreshed.
+      - We’re going to take a short break and then proceed.
+      - Please take a few minutes to stretch, we’ll restart soon.
+      - Let’s take a brief pause before continuing with the session.
+      - Break time! Let’s take 10 minutes before we continue.
+      - Let’s take 5 minutes to refresh, then we’ll carry on.
+      - Step away for a bit and we’ll resume after a short break.
+      - Let’s pause here, take a break, and resume shortly.
+      - Take a break now, we’ll get back to the lesson in 10 minutes.
+      - We’ll take a quick 5-minute break and reconvene.
+      - Let’s step away for 10 minutes, then we’ll continue the class.
+      - Feel free to take a short break, and we’ll regroup afterward.
+      - Time for a break! Let’s resume in 15 minutes.
+      - Let’s pause and take a short break before we move on.
+      - Let’s take a 5-minute break, and we’ll continue afterward.
+      - Break time! Please come back in 10 minutes.
+      - Let’s take a quick break before continuing the session.
+      - Feel free to take a break, we’ll get back together shortly.
+      - We’ll pause the session for 10 minutes before resuming.
+      - Let’s take a break and meet back in 15 minutes.
+      - Let’s take a moment to relax and we’ll continue afterward.
+      - Let’s break for a bit and return to continue the class.
+      - We’ll take a 10-minute break now and then resume the lesson.
+      - Feel free to take a break, and we’ll rejoin in a few minutes.
+      - We’ll take a quick pause and continue once you’re back.
+      - Let’s take 5 minutes to stretch, then we’ll resume the session.
+      - Break time! Come back in 10 minutes, and we’ll continue from here.
+  - intent: basic_terms
+    examples: |
+      - See you tomorrow.
+      - We will see the installation process.
+      - Uploading the audio and video.
+      - Bye, take care.
+      - Thank you for attending.
+      - Let’s wrap up for today.
+      - We’ll continue this in the next class.
+      - Have a good day!
+      - Let’s finish this up.
+      - We’ll start again next time.
+      - Any questions before we end?
+      - See you next week.
+      - Let me know if you have doubts.
+      - Thanks for your attention.
+      - See you all in the next session.
+      - Let’s review this tomorrow.
+      - We’ll move forward with this next time.
+      - Okay, we’ll leave it here for today.
+      - Understanding the basics is crucial.
+      - Yeah, okay, let's proceed.
+      - Don’t forget to practice at home.
+      - I’ll upload the assignment by tomorrow.
+      - Let's meet again at the same time.
+      - See you in the next class.
+      - Thanks for your participation.
+      - We’ll cover this in the next lecture.
+      - Time to wrap things up.
+      - I’ll give you the resources later.
+      - Bye, see you later.
+      - Thanks for attending the session.
+      - We’ll go through the details next time.
+      - Remember to revise this topic.
+      - I’ll upload the slides after class.
+      - Let’s end it here for today.
+      - Make sure to read the material.
+      - We’ll start with something new next time.
+      - Please review the notes before the next session.
+      - I’ll see you all next class.
+      - Let me know if you need help with this.
+      - Let’s continue this discussion tomorrow.
+      - Thanks for being here today.
+      - The next session will cover this topic.
+      - I’ll share the recording later.
+      - See you in the next lecture.
+      - Please complete the assignment by next week.
+      - We’ll go over the homework next time.
+      - I’ll explain this in the next session.
+      - Thank you for your time.
+      - We’ll discuss the project next class.
+      - Alright, see you all soon.
+      - Let’s call it a day.
+      - You can ask me questions tomorrow.
+      - Don't forget to check the assignment.
+      - I’ll follow up on this next class.
+      - Let's finish this off next time.
+      - Yeah, let’s go over that next session.
+      - I’ll give feedback on the homework next class.
+      - We’ll dive deeper into this topic next time.
+      - Let’s continue this next week.
+      - Alright, see you next time!
+      - I’ll go over the solution tomorrow.
+      - Let’s continue where we left off next class.
+      - Please upload your work by tomorrow.
+      - We’ll cover the next chapter tomorrow.
+      - Make sure to revise this section.
+      - Bye for now, and take care.
+      - I’ll be available after class for questions.
+      - I’ll upload the video tutorial later.
+      - We’ll wrap this up next time.
+      - We’ll start with the next module tomorrow.
+      - Please don’t forget to review this part.
+      - Let’s go over the exercise next time.
+      - I’ll see you all in the next session.
+      - Make sure you understand today’s material.
+      - Let’s break for now.
+      - The next lesson will build on this.
+      - See you after the weekend.
+      - Thanks for sticking with us.
+      - Let’s stop here for today.
+      - We’ll begin with a recap next class.
+      - I’ll explain the next step tomorrow.
+      - Don’t forget to go over today’s notes.
+      - You can submit the project tomorrow.
+      - I'll post the reference materials after class.
+      - Bye everyone, take care.
+      - Let’s review the homework next class.
+      - See you next class for part two.
+      - Please prepare for tomorrow's session.
+      - Thanks for your input today.
+      - We’ll end the session now.
+      - Let’s close things off here.
+      - The next session will be on the same topic.
+      - Remember to revise what we discussed.
+      - We'll follow up on this tomorrow.
+      - We’ll go into more detail next time.
+      - I’ll share the lecture notes after class.
+      - Don’t forget to ask questions if you’re unsure.
+      - Let’s pause here for now.
+      - I’ll post more details tomorrow.
+      - Please be ready for tomorrow’s session.
+      - The next class will start with a quick review.
+      - Don’t forget to check the portal for updates.
+      - I’ll go over the remaining points next class.
+      - See you in the following session.
+      - Make sure you understand today’s lesson.
+      - We’ll revisit this topic next week.
+      - Alright, let’s finish this up next time.
+      - I’ll send you more materials tomorrow.
+      - See you in the next meeting.
+      - Let’s wrap it up here for now.
+      - I’ll explain the task tomorrow.
+      - Make sure to check the homework assignment.
+      - Bye everyone, see you next time.
+      - Don’t hesitate to ask me questions after class.
+      - We’ll continue with this next week.
+      - I’ll upload additional resources by tomorrow.
+      - We’ll start the next chapter in the following class.
+      - See you after the break.
+      - I’ll explain the next steps in the next session.
+      - Be prepared to discuss this next time.
+      - We’ll wrap this up in the next class.
+      - We’ll dive into this further tomorrow.
+      - I’ll follow up with you tomorrow.
+      - Thank you all for attending today.
+      - Please go over today’s notes tonight.
+      - We’ll finish the topic in the next class.
+      - Let’s pause here and continue next week.
+      - Thanks for being here today.
+      - I’ll share more information next time.
+      - Don’t forget to review today’s materials.
+      - I’ll send out an update after the session.
+      - We’ll move on to the next part tomorrow.
+      - See you after lunch.
+      - Let’s wrap this up for today.
+      - Please go through the exercise for tomorrow.
+      - I’ll give a summary next time.
+      - We’ll finish the last part tomorrow.
+      - I’ll upload the practice questions later.
+      - Thanks again for participating.
+      - We’ll continue from here tomorrow.
+      - I’ll clarify the task next time.
+      - Please go over the material before the next class.
+      - We’ll finish up next session.
+      - Don’t forget to ask questions if needed.
+      - Let’s close this session for now.
+      - We’ll complete this in the next class.
+      - See you next time for the follow-up session.
+      - I’ll clarify any doubts tomorrow.
+      - We’ll stop here and continue later.
+      - Thank you all for your participation today!
+      - Go to  ensembles.
+      - So let us learn.
+      - We will learn more about this tomorrow.
+      - They are the ones who will not worry about any jail term facing any jail terms.
+      - They also don't care about any kind of punishment there.
+      - Instead of taking jail time, they suicide themselves. 
+      - It may be of the ashroshal or political agendas.
+      - So let us go through our wands more here.
+      - A terrorist suicide bombing is a type of attack where a person kills themselves while also killing others.
+      - Here is some information about female suicide bombers.
+      - Some organizations that have used female suicide bombers include Boko Haram, ISIS, and the Al Aqsa Martyrs Brigade.
+      - I just saw the elective subject, guys.
+
+  - intent: necessary_installment
+    examples: |
+      - Organizations should adopt the NIST or ISO 27001 framework to guide the development of cybersecurity policies.
+      - A policy management tool ensures that policies are regularly updated and easily accessible to employees.
+      - Data classification software helps define and categorize sensitive data for specific security policies.
+      - Security compliance software tracks adherence to regulatory requirements across the organization.
+      - Document management systems store and manage all cybersecurity-related policies and guidelines.
+      - Change management tools allow for proper documentation and approval of policy modifications.
+      - An automated policy audit tool ensures that employees comply with updated cybersecurity policies.
+      - Risk management software helps assess the impact of security policies on business operations.
+      - Security policy simulators can be used to test the effectiveness of policies before full deployment.
+      - GRC (Governance, Risk, and Compliance) tools are essential for tracking policy implementation and compliance.
+      - Identity and Access Management (IAM) systems control user permissions and ensure proper authorization.
+      - Single Sign-On (SSO) tools provide streamlined authentication for users across multiple systems.
+      - Multi-factor authentication (MFA) platforms add layers of security to user login processes.
+      - Digital consent management systems ensure proper documentation of user approvals for data collection.
+      - Authorization tracking tools allow organizations to manage and audit user permissions.
+      - Privileged Access Management (PAM) solutions secure access to sensitive accounts and systems.
+      - Consent verification tools ensure that employees and customers have given informed consent for data use.
+      - Certificate authority tools enable the issuance and validation of digital certificates for secure communication.
+      - OAuth platforms allow secure, token-based authentication for APIs and third-party applications.
+      - Access control software ensures only authorized users can access critical systems and data.
+      - Compliance management tools monitor adherence to regulatory requirements such as GDPR and HIPAA.
+      - Automated audit software runs regular checks to ensure systems are in line with cybersecurity standards.
+      - Vulnerability scanning tools such as Nessus or Qualys identify and track compliance risks.
+      - Log management software captures and stores system activity for compliance audits.
+      - Risk assessment tools help ensure that regulatory requirements are met and identify potential weaknesses.
+      - Data governance tools ensure that sensitive information is handled in accordance with regulatory guidelines.
+      - GRC software integrates governance, risk, and compliance processes across the organization.
+      - Third-party compliance verification tools ensure that vendor systems meet security standards.
+      - Automated reporting tools generate reports for internal audits and external compliance regulators.
+      - Continuous monitoring platforms help track compliance in real-time, alerting security teams to any deviations.
+      - Splunk is a leading SIEM tool that centralizes security monitoring and alerting for real-time threats.
+      - IBM QRadar helps analyze and correlate security event data to detect potential cyberattacks.
+      - LogRhythm provides SIEM capabilities with automated threat detection and response.
+      - AlienVault USM combines SIEM, intrusion detection, and vulnerability assessment into one platform.
+      - ArcSight enables real-time data monitoring and correlation to detect suspicious activity.
+      - SolarWinds SIEM helps gather security data from various sources for analysis and incident detection.
+      - ELK Stack (Elasticsearch, Logstash, Kibana) is a popular open-source SIEM tool for log aggregation and visualization.
+      - Rapid7 InsightIDR is a cloud-based SIEM tool that detects threats using behavioral analytics.
+      - Graylog is an open-source SIEM solution that allows log management and event correlation.
+      - McAfee Enterprise Security Manager provides SIEM capabilities with real-time threat intelligence integration.
+      - Okta is a cloud-based IAM tool that provides secure access management and SSO capabilities.
+      - Microsoft Azure AD offers IAM solutions with seamless integration into cloud and on-premises services.
+      - SailPoint provides identity governance for managing access to critical business systems.
+      - Ping Identity supports multi-factor authentication, SSO, and IAM functions across various applications.
+      - CyberArk is a leader in privileged access management, ensuring secure control over sensitive accounts.
+      - ForgeRock is an open-source IAM solution that integrates identity management, security, and governance.
+      - Duo Security offers multi-factor authentication to secure access to applications and devices.
+      - RSA SecurID is a widely-used tool for providing two-factor authentication and access control.
+      - IBM Security Identity Governance helps automate and enforce IAM policies.
+      - Auth0 is a flexible IAM solution that supports both SSO and user authentication across web and mobile apps.
+      - VeraCrypt is an open-source encryption tool that provides encryption for files, drives, and partitions.
+      - BitLocker (by Microsoft) offers full disk encryption for Windows-based systems.
+      - Vormetric Data Encryption provides advanced encryption solutions for protecting sensitive data at rest.
+      - OpenSSL is a widely-used toolkit for implementing encryption and secure communications.
+      - McAfee Complete Data Protection includes file, disk, and removable media encryption.
+      - Zscaler provides encryption for secure data transmission across cloud environments.
+      - Kaspersky Endpoint Security offers encryption solutions for data stored on endpoints.
+      - PKWARE offers enterprise-grade data encryption and data protection solutions.
+      - Symantec Encryption provides full-disk encryption for protecting data on devices.
+      - Thales CipherTrust delivers enterprise-level encryption and key management for cloud, on-premise, and hybrid environments.
+      - Norton Security provides real-time protection against malware and viruses for endpoint devices.
+      - McAfee Endpoint Security combines firewall, intrusion prevention, and antivirus capabilities.
+      - CrowdStrike Falcon offers advanced endpoint detection and response (EDR) to monitor endpoint activities.
+      - Kaspersky Endpoint Security provides comprehensive protection for endpoints against malware and cyberattacks.
+      - Trend Micro Apex One provides advanced malware detection and endpoint security features.
+      - Sophos Endpoint Protection includes anti-malware, anti-ransomware, and data loss prevention (DLP) tools.
+      - Carbon Black (by VMware) is an endpoint security platform that includes threat detection and incident response.
+      - SentinelOne combines EDR, anti-malware, and threat intelligence to protect endpoint devices.
+      - Palo Alto Cortex XDR integrates endpoint protection with detection and response capabilities.
+      - F-Secure offers endpoint security solutions with advanced malware detection and prevention.
+      - Cisco ASA Firewall provides advanced network security and firewall protection for businesses.
+      - Palo Alto Networks Next-Generation Firewall offers intelligent traffic filtering and application-layer protection.
+      - Fortinet FortiGate firewalls deliver comprehensive threat protection for enterprise networks.
+      - SonicWall provides a wide range of firewalls designed for small to large businesses.
+      - pfSense is an open-source firewall software for securing networks.
+      - Juniper SRX Series offers high-performance firewalls with integrated threat intelligence.
+      - Check Point Firewall is a leading next-gen firewall that provides full network protection.
+      - Sophos XG Firewall offers unified threat management (UTM) features and advanced threat protection.
+      - Barracuda CloudGen Firewall provides advanced security for cloud, on-premise, and hybrid environments.
+      - Ubiquiti EdgeRouter offers robust firewall features for network segmentation and traffic control.
+      - Nessus is a popular vulnerability scanner used to identify security flaws in systems and networks.
+      - Qualys provides cloud-based vulnerability scanning and management solutions.
+      - OpenVAS is an open-source vulnerability scanning tool used for network security assessments.
+      - Metasploit is widely used for penetration testing to exploit and validate vulnerabilities.
+      - Wireshark is a network protocol analyzer used to monitor and detect vulnerabilities in network traffic.
+      - Nmap is a network discovery and security auditing tool used for vulnerability assessments.
+      - Acunetix provides automated web application vulnerability scanning.
+      - OWASP ZAP is an open-source tool designed for finding vulnerabilities in web applications.
+      - Tenable.io offers cloud-based vulnerability management and penetration testing services.
+      - KnowBe4 offers simulated phishing attacks and security awareness training for employees.
+      - Cofense PhishMe provides phishing simulation tools to train users in recognizing phishing attacks.
+      - Terranova Security offers training modules focused on cybersecurity awareness and data protection.
+      - SANS Security Awareness delivers comprehensive training on cybersecurity best practices.
+      - Infosec IQ provides interactive security training and phishing simulations for employees.
+      - Proofpoint Security Awareness educates employees on social engineering, phishing, and data protection.
+      - Curricula offers engaging cybersecurity training and simulations for user education.
+      - MediaPRO provides security awareness training with customizable content to match organizational needs.
+      - Security Mentor offers bite-sized training modules to engage employees in cybersecurity education.
+      - Cybrary is an online training platform that offers a variety of cybersecurity courses for professional development.
+      - Veeam Backup & Replication offers robust backup and disaster recovery for virtual, physical, and cloud environments.
+      - Acronis Backup provides automated backups and data recovery for both cloud and on-premise systems.
+      - Commvault delivers enterprise-level backup and disaster recovery solutions with data encryption.
+      - Druva offers cloud-based backup and disaster recovery for data stored on endpoints and servers.
+      - Carbonite provides continuous cloud-based backups for businesses of all sizes.
+      - Barracuda Backup combines cloud and on-premise backups to protect critical business data.
+      - Cohesity offers backup and recovery for hybrid and multi-cloud environments.
+      - Veritas NetBackup provides scalable backup and recovery solutions for enterprise environments.
+      - IDrive offers secure cloud backup services with encryption for data protection.
+      - Unitrends provides all-in-one backup and disaster recovery solutions for small and mid-sized businesses.
+      - Zscaler Cloud Security ensures secure access to cloud applications with built-in encryption.
+      - Palo Alto Prisma Cloud offers comprehensive cloud security solutions for workloads and applications.
+      - Check Point CloudGuard provides advanced threat protection for public, private, and hybrid clouds.
+      - AWS Shield is a cloud-native security service that protects applications on AWS from DDoS attacks.
+      - Azure Security Center helps protect workloads running in Microsoft Azure through threat detection and prevention.
+      - Google Cloud Security Command Center provides visibility into cloud assets and potential threats.
+      - Symantec Cloud Workload Protection offers automated security for workloads running in the cloud.
+      - Trend Micro Deep Security provides advanced protection for cloud workloads.
+      - Cisco Umbrella offers cloud-based DNS security and threat protection for cloud services.
+      - Fortinet FortiGate Cloud delivers firewall and security management for multi-cloud environments.
+      - RSA Archer provides governance, risk, and compliance (GRC) management solutions for enterprises.
+      - MetricStream offers GRC software for risk management, regulatory compliance, and auditing.
+      - SAP GRC enables organizations to manage and mitigate risks across financial and operational processes.
+      - Lockpath Keylight is a GRC platform that helps organizations align security management with business objectives.
+      - Resolver provides tools for risk management, incident reporting, and audit management.
+      - ACL GRC delivers automated compliance management and audit processes.
+      - Diligent GRC is an integrated platform for managing risks, policies, and compliance.
+      - Galvanize HighBond offers GRC tools for managing compliance and security risks.
+      - OneTrust provides privacy management tools to help organizations comply with data protection regulations.
+      - LogicGate is a risk management platform that integrates governance, risk, and compliance workflows.
+      - BitSight is a third-party risk management tool that provides continuous monitoring of vendor security.
+      - SecurityScorecard allows organizations to assess the cybersecurity posture of third-party vendors.
+      - UpGuard provides tools for managing vendor risk and ensuring third-party compliance with security standards.
+      - Prevalent offers automated third-party risk assessment tools for vendor risk management.
+      - RiskRecon delivers insights into third-party risks by assessing vendor networks for vulnerabilities.
+      - ProcessUnity is a vendor risk management solution that provides visibility into third-party risks.
+      - Aravo offers vendor risk management solutions that help ensure compliance with regulatory requirements.
+      - Venminder provides vendor risk assessments and cybersecurity reviews for third-party management.
+      - Shared Assessments offers tools for third-party risk management through vendor questionnaires and assessments.
+      - CyberGRX delivers a risk management platform that assesses third-party vendors’ cybersecurity practices.

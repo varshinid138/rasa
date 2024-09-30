@@ -1,0 +1,40 @@
+User: This is the worst idea
+Bot: This sentence has negative sentiment.
+User: murder
+Bot: This sentence has negative sentiment.
+User: kill
+Bot: This sentence has negative sentiment.
+User: kill
+Bot: This sentence has negative sentiment.
+User: murder
+Bot: This sentence has negative sentiment.
+User: ppt
+Bot: This sentence has negative sentiment.
+User: sucide
+Bot: This sentence has negative sentiment.
+User: hii
+Bot: This sentence has negative sentiment.
+User: hii
+Bot: This sentence has negative sentiment.
+User: vanakam
+Bot: This sentence has negative sentiment.
+User: i hate you
+Bot: This sentence has negative sentiment.
+User: are u mad
+Bot: This sentence has negative sentiment.
+User: kill
+Bot: This sentence has negative sentiment.
+User: yes
+Bot: This sentence has negative sentiment.
+User: yes
+Bot: This sentence has negative sentiment.
+User: I desire how you handle things
+Bot: This sentence has negative sentiment.
+User: yes
+Bot: This sentence has negative sentiment.
+User: add the target the phishing
+Bot: This sentence has negative sentiment.
+User: phishing
+Bot: This sentence has negative sentiment.
+User: understand
+Bot: This sentence has negative sentiment.

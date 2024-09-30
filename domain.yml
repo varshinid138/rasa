@@ -1,0 +1,62 @@
+version: "3.1"
+
+
+slots:
+  bot_response:
+    type: text
+    mappings:
+      - type: custom
+     
+   
+
+
+actions:
+  - action_log_conversation
+ 
+
+intents:
+  - negative_sentiment
+  - out_of_context
+  - neutral_sentiment
+  - relevant_sentence
+  - irrelevant_sentence
+  - general_questions
+  - doubt_clearing
+  - taking_breaks
+  - basic_terms
+  - necessary_installment
+
+responses:
+  utter_negative_sentiment:
+    - text: "This sentence has negative sentiment."
+  
+  utter_out_of_context:
+    - text: "This sentence is out of context."
+  
+  utter_neutral_sentiment:
+    - text: "This is a neutral statement or greeting."
+  
+  utter_relevant_sentence:
+    - text: "This is a relevant cybersecurity sentence."
+  
+  utter_irrelevant_sentence:
+    - text: "This sentence is irrelevant."
+
+  utter_general_questions:
+    - text: "This is a general question."
+
+  utter_doubt_clearing:
+    - text: "This is a doubt clearing sentence."
+
+  utter_taking_breaks:
+    - text: "This is a taking breaks sentence."
+
+  utter_basic_terms:
+    - text: "This is a basic term."
+
+  utter_necessary_installment:
+    - text: "This is a necessary installment."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

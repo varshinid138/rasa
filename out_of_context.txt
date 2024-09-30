@@ -1,0 +1,26 @@
+User: How is your family doing
+Bot: This sentence is out of context.
+User: The traffic is heavy
+Bot: This sentence is out of context.
+User: What are your doing
+Bot: This sentence is out of context.
+User: What is happening
+Bot: This sentence is out of context.
+User: i love going to mountain
+Bot: This sentence is out of context.
+User: WHAT IS HAPPENING
+Bot: This sentence is out of context.
+User: Processed file data
+Bot: This sentence is out of context.
+User: Processed file data
+Bot: This sentence is out of context.
+User: Processed file data
+Bot: This sentence is out of context.
+User: Processed file data
+Bot: This sentence is out of context.
+User: what is capital of america
+Bot: This sentence is out of context.
+User: first reconji is the best
+Bot: This sentence is out of context.
+User: first reconji is one of the best
+Bot: This sentence is out of context.

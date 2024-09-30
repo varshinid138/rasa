@@ -1,0 +1,16 @@
+User: hi
+Bot: This is a neutral statement or greeting.
+User: hi
+Bot: This is a neutral statement or greeting.
+User: hii
+Bot: This is a neutral statement or greeting.
+User: hii
+Bot: This is a neutral statement or greeting.
+User: good morning everyone
+Bot: This is a neutral statement or greeting.
+User: hii
+Bot: This is a neutral statement or greeting.
+User: yes
+Bot: This is a neutral statement or greeting.
+User: okay
+Bot: This is a neutral statement or greeting.

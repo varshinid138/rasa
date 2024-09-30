@@ -1,0 +1,16 @@
+User: murder
+Bot: This is a relevant cybersecurity sentence.
+User: murder
+Bot: This is a relevant cybersecurity sentence.
+User: blackout hacker
+Bot: This is a relevant cybersecurity sentence.
+User: phishing comes under cyber security
+Bot: This is a relevant cybersecurity sentence.
+User: hacking my friends phone is good
+Bot: This is a relevant cybersecurity sentence.
+User: privacy breaching is good
+Bot: This is a relevant cybersecurity sentence.
+User: the user account can be hacked easily using the ip address
+Bot: This is a relevant cybersecurity sentence.
+User: understanding
+Bot: This is a relevant cybersecurity sentence.
